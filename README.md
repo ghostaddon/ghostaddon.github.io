@@ -15,4 +15,4 @@ Por favor, clique no botão abaixo para baixar o arquivo.
 Sinta-se à vontade para contribuir ou relatar problemas.
 
 ## Licença
-Este projeto está licenciado sob a [Sua Licença](caminho/do/seu/LICENSE).
+Este projeto está licenciado sob a [Sua Licença](LICENSE.md).
