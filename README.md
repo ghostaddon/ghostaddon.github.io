@@ -4,7 +4,7 @@
 
 Por favor, clique no botão abaixo para baixar o arquivo.
 
-[![Download do ADDON GHOST](caminho/do/seuarquivo.zip)](caminho/do/seuarquivo.zip)
+[![Download do ADDON GHOST](plugin.video.Addon.GHOST.zip)](plugin.video.Addon.GHOST.zip)
 
 ## Instruções de Download
 1. Clique no link acima para iniciar o download.
