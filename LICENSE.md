@@ -1,7 +1,7 @@
 # MIT License
 # Licença de Software
 
-Copyright <2023> < Nickolas >
+# Copyright < 2023 > < Nickolas >
 
 É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e permitir que pessoas a quem o Software é fornecido façam isso, sujeitas às seguintes condições:
 
