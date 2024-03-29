@@ -6,42 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADDON GHOST</title>
     <link rel="icon" href="ghost.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
         }
 
         .container {
             max-width: 600px;
-            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
         }
 
         .download-btn {
             display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 30px;
+            font-size: 1.1em;
             text-decoration: none;
-            background-color: #4CAF50;
+            background: linear-gradient(135deg, #ff6a00, #ee0979);
             color: white;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            border: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .download-btn i {
+            margin-right: 10px;
         }
 
         .download-btn:hover {
-            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .info {
+            margin-top: 50px;
+            color: #666;
+        }
+
+        .info p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #666;
+            text-align: center;
+        }
+
+        footer a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Download ADDON GHOST</h1>
-        <p>Por favor, Clique no Botão Abaixo Para Baixar o Arquivo.</p>
-        <a href="plugin.video.Addon.GHOST.zip" class="download-btn" download>Download do ADDON GHOST</a>
-        <a href="OPÇAO 2\plugin.video.Addon.GHOST.zip" class="download-btn" download>Download do ADDON GHOST OP 2</a>
-        <a href="CEL\plugin.video.Addon.GHOST.zip" class="download-btn" download>Download do ADDON GHOST Para Celular</a>
-        <a href="https://github.com/ghostaddon/ADDON-GHOST" class="download-btn" download>Nosso GitHub</a>
+        <p>Hey! Pronto para experimentar algo assustador? Baixe nosso ADDON GHOST agora mesmo!</p>
+        <a href="plugin.video.Addon.GHOST.zip" class="download-btn" download><i class="fas fa-download"></i>Download do ADDON GHOST</a>
+        <a href="OPÇAO 2\plugin.video.Addon.GHOST.zip" class="download-btn" download><i class="fas fa-download"></i>Download da Opção 2</a>
+        <a href="CEL\plugin.video.Addon.GHOST.zip" class="download-btn" download><i class="fas fa-download"></i>Download para Celular</a>
+        <a href="https://github.com/ghostaddon/ADDON-GHOST" class="download-btn" target="_blank"><i class="fab fa-github"></i>Visite nosso GitHub</a>
+        <div class="info">
+            <h2>Informações Adicionais</h2>
+            <p>Compatível com: Kodi 19+</p>
+            <p>Versão: 1.0</p>
+            <p>Tamanho do arquivo: 10MB</p>
+        </div>
     </div>
+    <footer>
+        <p>Siga-nos:</p>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </footer>
 </body>
 </html>
