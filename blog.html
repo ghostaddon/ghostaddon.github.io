@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog da Geração Z</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f3d4a;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ee0979;
+        }
+
+        nav {
+            background-color: #1f2933;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+
+        nav a:hover {
+            background-color: #ff6a00;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        article {
+            background-color: #37474f;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        article h2 {
+            color: #ff6a00;
+        }
+
+        article p {
+            color: #ddd;
+        }
+
+        article a {
+            color: #ee0979;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        article a:hover {
+            color: #fff;
+        }
+
+        footer {
+            background-color: #2f3d4a;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog da Geração Z</h1>
+    </header>
+
+    <nav>
+        <a href="https://ghostaddon.github.io/ADDON-GHOST/">Início</a>
+        <a href="https://ghostaddon.github.io/ADDON-GHOST/blog.html">Sobre</a>
+        <a href="https://t.me/ghostaddon">Contato</a>
+    </nav>
+
+    <div class="container">
+        <article>
+            <h2>Título do Primeiro Post</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et felis vel lorem aliquet vehicula vel id ipsum. Fusce commodo tincidunt lorem eget fringilla.</p>
+            <a href="#">Leia mais</a>
+        </article>
+
+        <article>
+            <h2>Título do Segundo Post</h2>
+            <p>Curabitur convallis, leo eget tincidunt fermentum, risus odio lobortis enim, ac viverra purus turpis a arcu.</p>
+            <a href="#">Leia mais</a>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Blog da Geração Z</p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
