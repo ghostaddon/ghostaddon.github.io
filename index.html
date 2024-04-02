@@ -10,7 +10,8 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #1a1a1a;
+            color: #e6e6e6;
             margin: 0;
             padding: 0;
             display: flex;
@@ -20,9 +21,37 @@
             flex-direction: column;
         }
 
+        header {
+            background-color: #191919;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ff6a00;
+        }
+
+        nav {
+            background-color: #333333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #e6e6e6;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+
+        nav a:hover {
+            background-color: #ff6a00;
+        }
+
         .container {
             max-width: 600px;
-            background-color: #fff;
+            background-color: #333333;
             border-radius: 10px;
             padding: 40px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -30,13 +59,13 @@
         }
 
         h1 {
-            color: #333;
+            color: #ff6a00;
             font-size: 2.5em;
             margin-bottom: 20px;
         }
 
         p {
-            color: #666;
+            color: #e6e6e6;
             font-size: 1.1em;
             margin-bottom: 30px;
         }
@@ -65,7 +94,7 @@
 
         .info {
             margin-top: 50px;
-            color: #666;
+            color: #e6e6e6;
         }
 
         .info p {
@@ -73,19 +102,30 @@
         }
 
         footer {
-            margin-top: 50px;
-            color: #666;
+            background-color: #191919;
+            color: #e6e6e6;
             text-align: center;
+            padding: 10px 0;
         }
 
         footer a {
-            color: #666;
+            color: #e6e6e6;
             text-decoration: none;
             margin: 0 10px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>ADDON GhostHaunt</h1>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
     <div class="container">
         <h1>Download ADDON GHOST</h1>
         <p>Hey! Pronto para experimentar algo assustador? Baixe nosso ADDON GHOST agora mesmo!</p>
@@ -101,6 +141,7 @@
             <p>Tamanho do arquivo: 2,88MB</p>
         </div>
     </div>
+
     <footer>
         <p>Siga-nos:</p>
         <a href="https://t.me/ghostaddon"><i class="fab fa-telegram"></i></a>
