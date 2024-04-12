@@ -1,6 +1,6 @@
 # Página de Download
 
-![Ícone do Favicon](ghost.jpg)
+![Ícone do Favicon](png/ghost.jpg)
 
 Por favor, clique no botão abaixo para baixar o arquivo.
 
@@ -16,7 +16,7 @@ Sinta-se à vontade para contribuir ou relatar problemas.
 
 ## Nosso Grupo Do Telegram
 
-[![GHOST ADDON](telegram.png)](https://t.me/ghostaddon)
+[![GHOST ADDON](png/telegram.png)](https://t.me/ghostaddon)
 Clique Na Imagem Acima Para Entra No Nosso Grupo no Telegram!!
 
 ## Licença
