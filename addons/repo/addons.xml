@@ -19,13 +19,13 @@
 <dir minversion="16.0.0" maxversion="18.9.0">
 <info compressed="false">https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/repo/addons.xml</info>
 <checksum>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/repo/addons.xml.md5</checksum>
-<datadir zip="true">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/Plugins/</datadir>
+<datadir zip="true">https://github.com/ghostaddon/ADDON-GHOST/raw/main/addons/repo/Plugins/</datadir>
 <hashes>false</hashes>
 </dir>
 <dir minversion="18.9.1">
 <info compressed="false">https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/repo/addons_matrix.xml</info>
 <checksum>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/repo/addons_matrix.xml.md5</checksum>
-<datadir zip="true">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/Plugins/</datadir>
+<datadir zip="true">https://github.com/ghostaddon/ADDON-GHOST/raw/main/addons/repo/Plugins/</datadir>
 <hashes>false</hashes>
 </dir>
 <dir>
@@ -58,13 +58,13 @@
 <dir minversion="16.0.0" maxversion="18.9.0">
 <info compressed="false">https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/repo/addons.xml</info>
 <checksum>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/repo/addons.xml.md5</checksum>
-<datadir zip="true">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/Plugins/</datadir>
+<datadir zip="true">https://github.com/ghostaddon/ADDON-GHOST/raw/main/addons/repo/Plugins/</datadir>
 <hashes>false</hashes>
 </dir>
 <dir minversion="18.9.1">
 <info compressed="false">https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/repo/addons_matrix.xml</info>
 <checksum>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/repo/addons_matrix.xml.md5</checksum>
-<datadir zip="true">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/Plugins/</datadir>
+<datadir zip="true">https://github.com/ghostaddon/ADDON-GHOST/raw/main/addons/repo/Plugins/</datadir>
 <hashes>false</hashes>
 </dir>
 <dir>
