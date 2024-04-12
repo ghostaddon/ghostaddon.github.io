@@ -4,7 +4,7 @@
 
 Por favor, clique no botão abaixo para baixar o arquivo.
 
-[Download do ADDON GHOST](https://github.com/ghostaddon/ADDON-GHOST/raw/main/addons/plugin.video.Addon.GhostHaunt.zip)
+[Download do GhostHaunt](https://github.com/ghostaddon/ADDON-GHOST/raw/main/addons/plugin.video.Addon.GhostHaunt.zip)
 
 ## Instruções de Download
 1. Clique no link acima para iniciar o download.
