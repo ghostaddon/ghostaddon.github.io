@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.GhostHaunt" name="Repositório GhostHaunt" version="1.0.0" provider-name="GhostHaunt">
+	<extension point="xbmc.addon.repository" name="Repositório GhostHaunt">
+		<info compressed="false">https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/master/addons/repo/addon.xml</info>
+	    <checksum>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/master/addons/repo/addon.xml.md5</checksum>
+	    <datadir zip="true">https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/master/addons/repo/Zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>OBRIGADO POR ULTILIZA NOSSO ADDON</summary>
+		<description>Repositório GhostHaunt</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
