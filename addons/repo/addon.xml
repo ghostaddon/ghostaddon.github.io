@@ -1,9 +1,9 @@
 <addons>
     <addon id="repository.GhostHaunt" name="Repositório GhostHaunt" version="1.0.0" provider-name="GhostHaunt">
         <extension point="xbmc.addon.repository" name="Repositório GhostHaunt">
-            <info>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/master/addons/repo/addon.xml</info>
-            <checksum>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/master/addons/repo/addon.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/master/addons/Zips</datadir>
+            <info>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/repo/addon.xml</info>
+            <checksum>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/repo/addon.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/Zips</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary>OBRIGADO POR UTILIZAR NOSSO ADDON</summary>
@@ -24,9 +24,9 @@
             <provides>video</provides>
         </extension>
         <extension point="xbmc.addon.repository" name="Repositório GhostHaunt">
-            <info>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/master/addons/plugin.video.Addon.GhostHaunt.zip/addon.xml</info>
-            <checksum>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/master/addons/plugin.video.Addon.GhostHaunt.zip/addon.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/master/addons/plugin.video.Addon.GhostHaunt.zip</datadir>
+            <info>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/plugin.video.Addon.GhostHaunt.zip/addon.xml</info>
+            <checksum>https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/plugin.video.Addon.GhostHaunt.zip/addon.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ghostaddon/ADDON-GHOST/main/addons/plugin.video.Addon.GhostHaunt.zip</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary lang="en">Tenha o melhor conteúdo no seu Kodi.</summary>
