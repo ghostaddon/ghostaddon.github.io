@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostHaunt Online</title>
+    <style>
+        /* Adicione o CSS para a tela de aparição */
+        .ghost-appear {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            animation: ghost-appear-animation 1s ease forwards, ghost-disappear-animation 1s ease forwards 2s;
+        }
+
+
+        @keyframes ghost-appear-animation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes ghost-disappear-animation {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        /* Restante do CSS do seu código */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f3d4a;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ee0979;
+        }
+
+        nav {
+            background-color: #1f2933;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+
+        nav a:hover {
+            background-color: #ff6a00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .section-container {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            margin: 0 0 20px;
+            font-size: 1.8em;
+            color: #fff;
+            text-align: center;
+        }
+
+        .movie-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+
+        .movie-card {
+            background-color: #37474f;
+            color: #fff;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .movie-card img.movie-image {
+            width: 100px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+        }
+
+        .popup-content {
+            text-align: center;
+        }
+
+        .popup button {
+            background-color: #ee0979;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .popup button:hover {
+            background-color: #ff6a00;
+        }
+
+        .popup-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9998;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 300px;
+            font-size: 1em;
+        }
+
+        .search-container input[type="submit"] {
+            background-color: #ee0979;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.5s ease;
+        }
+
+        .search-container input[type="submit"]:hover {
+            background-color: #ff6a00;
+        }
+
+        /* Estilo da barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 10px; /* largura da barra de rolagem */
+        }
+
+        /* Estilo do trilho da barra de rolagem */
+        ::-webkit-scrollbar-track {
+            background: #1f2933; /* cor de fundo do trilho */
+            border-radius: 10px; /* raio da borda do trilho */
+        }
+
+        /* Estilo do indicador da barra de rolagem */
+        ::-webkit-scrollbar-thumb {
+            background: #ff6a00; /* cor do indicador */
+            border-radius: 10px; /* raio da borda do indicador */
+        }
+
+        /* Estilo do indicador da barra de rolagem quando passa o mouse */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ee0979; /* cor do indicador quando passa o mouse */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Adicione a tela de aparição -->
+    <header>
+        <h1>GhostHaunt Online</h1>
+    </header>
+
+    <nav>
+        <a href="#action-section">Ação</a>
+        <a href="#adventure-section">Aventura</a>
+        <a href="#comedy-section">Comédia</a>
+        <a href="#drama-section">Drama</a>
+        <a href="#fantasy-section">Fantasia</a>
+        <a href="#scifi-section">Ficção Científica</a>
+        <a href="#thriller-section">Suspense</a>
+    </nav>
+
+    <div class="container">
+        <div class="section-container" id="action-section">
+            <h2 class="section-title">Ação</h2>
+            <div class="movie-container" id="action-movie-container">
+                <!-- Filmes de ação serão adicionados dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+
+        <div class="section-container" id="adventure-section">
+            <h2 class="section-title">Aventura</h2>
+            <div class="movie-container" id="adventure-movie-container">
+                <!-- Filmes de aventura serão adicionados dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+
+        <div class="section-container" id="comedy-section">
+            <h2 class="section-title">Comédia</h2>
+            <div class="movie-container" id="comedy-movie-container">
+                <!-- Filmes de comédia serão adicionados dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+
+        <div class="section-container" id="drama-section">
+            <h2 class="section-title">Drama</h2>
+            <div class="movie-container" id="drama-movie-container">
+                <!-- Filmes de drama serão adicionados dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+
+        <div class="section-container" id="fantasy-section">
+            <h2 class="section-title">Fantasia</h2>
+            <div class="movie-container" id="fantasy-movie-container">
+                <!-- Filmes de fantasia serão adicionados dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+
+        <div class="section-container" id="scifi-section">
+            <h2 class="section-title">Ficção Científica</h2>
+            <div class="movie-container" id="scifi-movie-container">
+                <!-- Filmes de ficção científica serão adicionados dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+
+        <div class="section-container" id="thriller-section">
+            <h2 class="section-title">Suspense</h2>
+            <div class="movie-container" id="thriller-movie-container">
+                <!-- Filmes de suspense serão adicionados dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <div class="popup" id="popup" style="display: none;">
+        <div class="popup-content">
+            <h2>Selecione um Servidor</h2>
+            <select id="movie-select"></select>
+            <select id="server-select">
+                <option value="https://embedflix.online/filme/id_imdb">Servidor 1</option>
+                <option value="https://embedder.net/e/movie?tmdb=ID_do_TMDB">Servidor 2</option>
+            </select>
+            <button id="watch-button">Assistir</button>
+            <button id="close-button">Fechar</button>
+        </div>
+    </div>
+
+    
+	
+	
+
+    <script>
+        const _0x5c2796=_0x51d2;function _0x50de(){const _0x43b6a9=['https://image.tmdb.org/t/p/w200','style','100070HdpUHB','catch','movie-select','addEventListener','search-input','add','scifi','json','https://embedder.net/e/movie?tmdb=','840489YJmlSv','thriller','Servidor\x201','162NVtgKG','DOMContentLoaded','https://api.themoviedb.org/3/discover/movie?api_key=fa2db16fd76770b1408ef23538da6695&language=pt-BR&with_genres=','https://aoseugosto.eu.org/embed/','poster_path','popup-background','then','_blank','error','3805810meZHqV','results','fantasy','display','GET','1183311vbNYpy','innerHTML','-movie-container\x20.movie-card:last-child','isIntersecting','637798goyDnP','total_pages','unknown','search-results-container','textContent','title','popup','getElementById','open','237508fWpexz','no_image_available.jpg','878','createElement','observe','action','comedy','Erro\x20ao\x20buscar\x20filmes:','movie-image','-movie-container','https://api.themoviedb.org/3/search/movie?query=','3LFUdis','src','appendChild','server-select','option','classList','Bearer\x20eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYTJkYjE2ZmQ3Njc3MGIxNDA4ZWYyMzUzOGRhNjY5NSIsInN1YiI6IjY1NDI3MGY5OWNjNjdiMDBkZjkxNGYyOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.waso91VlPmmfJw_ll_g6its6VQUV6VSiZMibOk88N6Y','8mgIorR','value','disconnect','&include_adult=false&language=pt-BR&page=1','search-results','forEach','alt','click','Servidor\x202','11pQIXul','1336574wLPFcJ','preventDefault','close-button','block','none','watch-button','querySelector'];_0x50de=function(){return _0x43b6a9;};return _0x50de();}function _0x51d2(_0x7f5908,_0x4c66f3){const _0x50de6f=_0x50de();return _0x51d2=function(_0x51d2d7,_0x42aee7){_0x51d2d7=_0x51d2d7-0x93;let _0x138e04=_0x50de6f[_0x51d2d7];return _0x138e04;},_0x51d2(_0x7f5908,_0x4c66f3);}(function(_0xe75a9e,_0x36e339){const _0x26bfc0=_0x51d2,_0x24123a=_0xe75a9e();while(!![]){try{const _0x3dd90f=parseInt(_0x26bfc0(0xc4))/0x1+-parseInt(_0x26bfc0(0xb2))/0x2*(parseInt(_0x26bfc0(0xa1))/0x3)+-parseInt(_0x26bfc0(0x96))/0x4+parseInt(_0x26bfc0(0xbb))/0x5*(parseInt(_0x26bfc0(0xc7))/0x6)+parseInt(_0x26bfc0(0xd9))/0x7+parseInt(_0x26bfc0(0xa8))/0x8*(parseInt(_0x26bfc0(0xd5))/0x9)+-parseInt(_0x26bfc0(0xd0))/0xa*(parseInt(_0x26bfc0(0xb1))/0xb);if(_0x3dd90f===_0x36e339)break;else _0x24123a['push'](_0x24123a['shift']());}catch(_0x4676ab){_0x24123a['push'](_0x24123a['shift']());}}}(_0x50de,0x78e6f),document[_0x5c2796(0xbe)](_0x5c2796(0xc8),function(){const _0x27439a=_0x5c2796,_0x4979b3=['28','12','35','18','14',_0x27439a(0x98),'53'];_0x4979b3[_0x27439a(0xad)](_0x3c4b95=>{_0x435fa9(_0x3c4b95,0x1);});function _0x435fa9(_0x46a895,_0x3ceba3){const _0x1d0164=_0x27439a;fetch(_0x1d0164(0xc9)+_0x46a895+'&page='+_0x3ceba3)[_0x1d0164(0xcd)](_0x571674=>_0x571674[_0x1d0164(0xc2)]())[_0x1d0164(0xcd)](_0x2af86c=>{const _0x326e25=_0x1d0164;_0x930db1(_0x2af86c['results'],_0x46a895);if(_0x2af86c[_0x326e25(0xda)]>_0x3ceba3){const _0x484b62=new IntersectionObserver(_0x180a03=>{const _0x53ce5d=_0x326e25;_0x180a03[0x0][_0x53ce5d(0xd8)]&&(_0x435fa9(_0x46a895,_0x3ceba3+0x1),_0x484b62[_0x53ce5d(0xaa)]());}),_0x1f4962=document[_0x326e25(0xb8)]('#'+_0x3a3603(_0x46a895)+_0x326e25(0xd7));_0x1f4962&&_0x484b62[_0x326e25(0x9a)](_0x1f4962);}})[_0x1d0164(0xbc)](_0x5877a6=>console[_0x1d0164(0xcf)]('Erro\x20ao\x20buscar\x20filmes\x20do\x20gênero\x20'+_0x46a895+':',_0x5877a6));}function _0x930db1(_0x1f9017,_0x4c7c49){const _0x2872e0=_0x27439a,_0x1e1a23=document[_0x2872e0(0x94)](_0x3a3603(_0x4c7c49)+_0x2872e0(0x9f));_0x1f9017['forEach'](_0x1b73fa=>{const _0xd6bbcf=_0x2872e0,_0x448b58=_0x3ff44a(_0x1b73fa);_0x1e1a23[_0xd6bbcf(0xa3)](_0x448b58);});}function _0x3ff44a(_0x3d15bc){const _0x329a98=_0x27439a,_0x2c5208=document[_0x329a98(0x99)]('div');_0x2c5208['classList']['add']('movie-card');const _0x2f84ee=document[_0x329a98(0x99)]('img');_0x2f84ee[_0x329a98(0xa6)][_0x329a98(0xc0)](_0x329a98(0x9e));const _0x14d6f3=_0x3d15bc[_0x329a98(0xcb)]?_0x329a98(0xb9)+_0x3d15bc[_0x329a98(0xcb)]:_0x329a98(0x97);return _0x2f84ee[_0x329a98(0xa2)]=_0x14d6f3,_0x2f84ee[_0x329a98(0xae)]=_0x3d15bc[_0x329a98(0xde)],_0x2f84ee['addEventListener'](_0x329a98(0xaf),function(){_0x2315e8(_0x3d15bc);}),_0x2c5208[_0x329a98(0xa3)](_0x2f84ee),_0x2c5208;}function _0x2315e8(_0x129177){const _0x400846=_0x27439a,_0x459c06=document[_0x400846(0x94)]('popup'),_0x17e77b=document[_0x400846(0x94)](_0x400846(0xcc)),_0x5ab853=document[_0x400846(0x94)](_0x400846(0xb7)),_0x2525e2=document['getElementById'](_0x400846(0xbd)),_0x29f060=document['getElementById'](_0x400846(0xa4));_0x2525e2[_0x400846(0xd6)]='';const _0x3f71b4=document[_0x400846(0x99)](_0x400846(0xa5));_0x3f71b4[_0x400846(0xa9)]=_0x129177['id'],_0x3f71b4['textContent']=_0x129177['title'],_0x2525e2[_0x400846(0xa3)](_0x3f71b4),_0x29f060[_0x400846(0xd6)]='';const _0x19b76b=document['createElement'](_0x400846(0xa5));_0x19b76b[_0x400846(0xa9)]=_0x400846(0xc3)+_0x129177['id'],_0x19b76b[_0x400846(0xdd)]=_0x400846(0xc6),_0x29f060[_0x400846(0xa3)](_0x19b76b);const _0x3c8383=document[_0x400846(0x99)]('option');_0x3c8383[_0x400846(0xa9)]=_0x400846(0xca)+_0x129177['id'],_0x3c8383[_0x400846(0xdd)]=_0x400846(0xb0),_0x29f060['appendChild'](_0x3c8383),_0x5ab853[_0x400846(0xbe)](_0x400846(0xaf),function(){const _0x512982=_0x400846,_0x4f6e45=_0x2525e2['value'],_0x3e334e=_0x29f060[_0x512982(0xa9)];window[_0x512982(0x95)](_0x3e334e,_0x512982(0xce)),_0x2dab57();}),_0x459c06[_0x400846(0xba)][_0x400846(0xd3)]=_0x400846(0xb5),_0x17e77b['style']['display']='block';}function _0x2dab57(){const _0x523788=_0x27439a,_0x55c3c2=document['getElementById'](_0x523788(0x93)),_0x383c41=document['getElementById'](_0x523788(0xcc));_0x55c3c2[_0x523788(0xba)][_0x523788(0xd3)]=_0x523788(0xb6),_0x383c41[_0x523788(0xba)][_0x523788(0xd3)]=_0x523788(0xb6);}const _0x3df9d7=document[_0x27439a(0x94)](_0x27439a(0xb4));_0x3df9d7[_0x27439a(0xbe)]('click',function(){_0x2dab57();});function _0x2dab57(){const _0x596058=_0x27439a,_0x176f51=document[_0x596058(0x94)](_0x596058(0x93)),_0x1d2d3c=document[_0x596058(0x94)]('popup-background');_0x176f51['style'][_0x596058(0xd3)]=_0x596058(0xb6),_0x1d2d3c['style'][_0x596058(0xd3)]=_0x596058(0xb6);}function _0x3a3603(_0xa17212){const _0x64dd2e=_0x27439a;switch(_0xa17212){case'28':return _0x64dd2e(0x9b);case'12':return'adventure';case'35':return _0x64dd2e(0x9c);case'18':return'drama';case'14':return _0x64dd2e(0xd2);case _0x64dd2e(0x98):return _0x64dd2e(0xc1);case'53':return _0x64dd2e(0xc5);default:return _0x64dd2e(0xdb);}}const _0x3fc890=document['getElementById']('search-form');_0x3fc890['addEventListener']('submit',function(_0x2db41d){const _0xf4cc2=_0x27439a;_0x2db41d[_0xf4cc2(0xb3)]();const _0x352881=document['getElementById'](_0xf4cc2(0xbf))[_0xf4cc2(0xa9)];_0x40d3b4(_0x352881);});function _0x40d3b4(_0xd7f10d){const _0x4018ca=_0x27439a,_0x27d49a={'method':_0x4018ca(0xd4),'headers':{'accept':'application/json','Authorization':_0x4018ca(0xa7)}};fetch(_0x4018ca(0xa0)+_0xd7f10d+_0x4018ca(0xab),_0x27d49a)[_0x4018ca(0xcd)](_0x3f23d8=>_0x3f23d8[_0x4018ca(0xc2)]())[_0x4018ca(0xcd)](_0x4ac080=>{const _0x1eed20=_0x4018ca,_0x1d2402=document[_0x1eed20(0x94)](_0x1eed20(0xdc));_0x1d2402['innerHTML']='';if(_0x4ac080['results']['length']===0x0){const _0x3dc460=document[_0x1eed20(0x99)]('p');_0x3dc460['textContent']='Nenhum\x20resultado\x20encontrado.',_0x1d2402['appendChild'](_0x3dc460);}else _0x930db1(_0x4ac080[_0x1eed20(0xd1)],_0x1eed20(0xac));})['catch'](_0x2e4d89=>console[_0x4018ca(0xcf)](_0x4018ca(0x9d),_0x2e4d89));}}));
+
+    </script>
+</body>
+</html>

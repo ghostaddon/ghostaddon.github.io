@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionamento</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .redirect-text {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .redirect-link {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="redirect-text">Redirecionando...</h1>
+    <p>Por favor, aguarde enquanto você é transferido para a próxima missão.</p>
+    <a href="index_movie.html" class="redirect-link">Clique aqui se não for redirecionado automaticamente</a>
+  </div>
+  <script>
+    setTimeout(function() {
+      window.location.href = 'index_movie.html';
+    }, 5000); // 5000 milliseconds = 5 seconds
+  </script>
+</body>
+</html>
