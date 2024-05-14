@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    max-height: 80px;
+    width: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .btn-doe-agora {
+    background: #e67e22;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: 	#000000;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h1 {
+    font-size: 3em;
+}
+
+.banner p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.banner .btn-doe-agora {
+    background: #e67e22;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.impacto {
+    background: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.impacto .historias {
+    display: flex;
+    justify-content: space-around;
+}
+
+.impacto .historia {
+    width: 45%;
+}
+
+.impacto .historia img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form-doacao {
+    padding: 50px 0;
+}
+
+.form-doacao form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-doacao label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+.form-doacao .valores, .form-doacao .frequencia, .form-doacao .metodo-pagamento {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-doacao .valores input, .form-doacao .frequencia input, .form-doacao .metodo-pagamento input {
+    margin-right: 10px;
+}
+
+.form-doacao .qr-code {
+    display: none;
+    margin-top: 20px;
+}
+
+.form-doacao .metodo-pagamento input[type="radio"]:checked ~ .qr-code {
+    display: block;
+}
+
+.form-doacao .btn-confirmar-doacao {
+    background: #e67e22;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.beneficios {
+    background: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.beneficios .certificados img {
+    margin: 20px;
+    height: 50px;
+}
+
+.faq {
+    padding: 50px 0;
+}
+
+.faq .perguntas .pergunta {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .links, footer .redes-sociais, footer .contato {
+    margin-bottom: 20px;
+}
+
+footer .redes-sociais img {
+    width: 30px;
+    margin: 0 10px;
+}
