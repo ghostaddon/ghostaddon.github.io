@@ -14,7 +14,7 @@ Esse App Permite Saber Das Novidades e Atualização Do Addon.
 
 ### Instalação
 
-1. Baixe o aplicativo GhostHaunt Information na loja storezero ou no github.
+1. Baixe o aplicativo GhostHaunt Information na loja [StoreZero](https://storezero.github.io/StoreZero) ou no [GitHub](https://github.com/ghostaddon/ADDON-GHOST/tree/main/app).
 2. Abra o aplicativo e aproveite.
 
 ### Tela Principal
