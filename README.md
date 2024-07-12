@@ -16,7 +16,7 @@ Por favor, clique no botão abaixo para baixar o arquivo.
 
 ## Contribuição
 Sinta-se à vontade para contribuir ou relatar problemas.
-Para Contribuição [Pix](https://ghostaddon.github.io/ADDON-GHOST/png/index.html)
+Para Contribuição [Pix](https://ghostaddon.github.io/ADDON-GHOST/png/pix/index.html)
 
 ## Nosso Grupo No Facebook
 
