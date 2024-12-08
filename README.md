@@ -2,7 +2,7 @@
 
 Por favor, clique no botão abaixo para baixar o arquivo.
 
-[Download do GhostHaunt](https://ghostaddon.github.io/ADDON-GHOST/plugin.video.Addon.GhostHaunt.zip)
+[Download do GhostHaunt](https://ghostaddon.github.io/plugin.video.Addon.GhostHaunt.zip)
 
 ## Instruções de Download
 1. Clique no link acima para iniciar o download.
@@ -10,8 +10,9 @@ Por favor, clique no botão abaixo para baixar o arquivo.
 3. E Instale o ZIP no KODI.
 
 ## Instruções de Download Dentro do KODI
-1. Digite Essa URL ( https://ghostaddon.github.io/ADDON-GHOST ) No Gerenciador de Arquivos Do KODI
-2. Depois Instale o Addon Via ZIP
+1. Digite Essa URL ( https://ghostaddon.github.io ) No Gerenciador de Arquivos Do KODI
+2. Coloque No Nome De Origem: ( Ghosthaunt )
+3. Depois Instale o Addon Via ZIP
 
 ## Contribuição
 Sinta-se à vontade para contribuir ou relatar problemas.
