@@ -12,7 +12,6 @@ Por favor, clique no botão abaixo para baixar o arquivo.
 ## Instruções de Download Dentro do KODI
 1. Digite Essa URL ( https://ghostaddon.github.io/ADDON-GHOST ) No Gerenciador de Arquivos Do KODI
 2. Depois Instale o Addon Via ZIP
-3. Tutorial Explicativo No Site [tutorials-2021.blogspot.com](https://tutorials-2021.blogspot.com/2024/07/ghosthaunt-addon-kodi-repo-url.html)
 
 ## Contribuição
 Sinta-se à vontade para contribuir ou relatar problemas.
