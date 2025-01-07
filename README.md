@@ -25,7 +25,7 @@
 
 Sinta-se à vontade para contribuir ou relatar problemas! Sua ajuda é sempre bem-vinda.
 
-🔗 Para contribuições ou doações: [Pix](https://ghostaddon.github.io/png/pix/index.html)
+🔗 Para contribuições ou doações: [Pix](https://ghostaddon.github.io/pix/index.html)
 
 ---
 
