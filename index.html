@@ -97,6 +97,24 @@
             margin: 20px 0;
         }
 
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e74c3c; /* Red color for the scrollbar thumb */
+            border-radius: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c0392b; /* Darker red on hover */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); /* Transparent track */
+        }
+
         /* Responsive adjustments for mobile */
         @media (max-width: 768px) {
             h1 {
